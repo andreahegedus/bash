@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo how many files would you like?
+
+read num
+
+i=1
+x=$num
+
+while (("$i" <= "$x"))
+do
+	touch /home/catlover/Documents/script[$i]
+    i=$(( $i + 1))
+    
+done
