@@ -4,12 +4,16 @@ echo how many files would you like?
 
 read num
 
+echo what do you want to name the files?
+
+read name
+
 i=1
 x=$num
 
 while (("$i" <= "$x"))
 do
-	touch /home/catlover/Documents/script[$i]
+	touch /home/catlover/Documents/$name$i
     i=$(( $i + 1))
     
 done
